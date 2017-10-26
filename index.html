@@ -66,12 +66,12 @@
       }
 
       .cta-text-1, .cta-text-3 {
-        font-size: 2rem;
-        line-height: 2rem;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
       }
       .cta-text-2 {
-        font-size: 3rem;
-        line-height: 3rem;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
       }
 
       .optional-break {
@@ -98,7 +98,7 @@
 
     @media (max-width: 720px) {
       section {
-        padding: 1rem;
+        padding: 3rem 1rem;
       }
     }
 
@@ -130,8 +130,8 @@
       margin-right: 1.2rem;
     }
 
-    p + p, li + li, p + ul, ul + p, h2 + p {
-      margin-top: 1rem;
+    p + p, li + li, p + ul, ul + p, h2 + p, p + h2 {
+      margin-top: 1.5rem;
     }
 
     .neon {
@@ -151,6 +151,20 @@
     @media (max-width: 720px) {
       font-size: 1rem;
       line-height: 1.3rem;
+    }
+
+    .land-this-point {
+      font-size: 2em;
+      line-height: 1.2em;
+      font-weight: bold;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .proto {
+      text-decoration: none;
     }
   </style>
 </head>
@@ -176,28 +190,33 @@
   </div>
 
   <section>
-    <p id=stats>
-      Today's Bible apps and websites are too big for two thirds of the people
-      on the internet. Current estimates say two billion internet users don't
-      have broadband connections, which presents a significant barrier to the
-      Word for two reasons:
+    <h2 id=stats>Bible apps and sites are too big</h2>
+
+    <p>
+      Current estimates say two billion internet users don't have broadband
+      connections, which presents a significant barrier to the Word.
     </p>
 
-    <ul>
-      <li>
-        <a
-          href="https://www.doubleclickbygoogle.com/articles/mobile-speed-matters/">Half
-          of users lose interest after just 3 seconds</a>, <a href="https://www.webpagetest.org/result/171025_WG_a74106ddac70b565ecfed2c55bc85a76/">well before Bible
-        Gateway can load a verse</a>. That's unacceptable when it comes to
-        retail and advertising, why would it be acceptable for the Word?
-      </li>
+    <h2 id=too-slow>Too slow</h2>
 
-      <li>
-        Emerging markets tend to price internet by bandwidth usage (metered
-        data). That means users pay by the verse. How likely are you to get
-        lost in the Word if you have to pay to keep reading?
-      </li>
-    </ul>
+    <p>
+      <a
+      href="https://www.doubleclickbygoogle.com/articles/mobile-speed-matters/">Half
+      of users lose interest after just 3 seconds</a>, <a
+      href="https://www.webpagetest.org/result/171025_WG_a74106ddac70b565ecfed2c55bc85a76/">well
+      before Bible Gateway can load a verse</a>. That's unacceptable when it
+      comes to retail and advertising, why would it be acceptable for the Word?
+    </p>
+
+    <h2 id=too-costly>Too costly</h2>
+
+    <p>
+      Emerging markets tend to price internet by bandwidth usage (metered
+      data). That means users pay by the verse. How likely are you to get lost
+      in the Word if you have to pay to keep reading?
+    </p>
+
+    <h2>What about offline apps?</h2>
 
     <p>
       Popular apps can download the text for offline reading, but they're
@@ -208,12 +227,14 @@
   <section class=half-hero>
     <div class=cta>
       <span class=cta-text-1>
-        Let's make a Bible app for the Great Commisssion.
+        Let's make a Bible app for the Great Commisssion
       </span>
     </div>
   </section>
 
   <section>
+    <h2 id=the-problem-with-books>Physical books are hard to move</h2>
+
     <p>
       Anyone that's visited developing areas can understand the difficulty of
       moving physical Bibles to remote areas. But even when there's no
@@ -222,20 +243,28 @@
       every tribe and tongue.
     </p>
 
+    <h2 id=goal>Our goal</h2>
+
     <p>
       The Everywhere Bible project aims to deliver the word to slow internet
-      connections in under 3 seconds and allow people to read the Bible without
-      having to pay each time. The <a href="https://esvbible.github.io">current
-      prototype</a> is 1/100<sup>th</sup> the size of popular Bible sites,
-      works even if the connection is lost, and never makes the user download
-      the same passage twice.
+      connections in <strong>under 3 seconds</strong> and allow people to read
+      the Bible <strong>without having to pay each time</strong>. The <a
+      href="https://esvbible.github.io">current prototype</a> is
+      1/100<sup>th</sup> the size of popular Bible sites, works even if the
+      connection is lost, and never makes the user download the same passage
+      twice.
+    </p>
+
+    <p class="land-this-point center">
+      <a class=proto href="https://esvbible.github.io">Check out the <br/>
+      prototype &#10140;</a>
     </p>
   </section>
 
   <section class=neon>
     <h2 id=contact>Want to know more?</h2>
 
-    <p>
+    <p class=center>
       <a href="mailto:aaron.r.stacy@gmail.com">Contact us</a> to find out more.
     </p>
   </section>
