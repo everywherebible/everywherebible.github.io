@@ -1,0 +1,243 @@
+<!doctype html>
+
+<html lang=en>
+<head>
+  <meta charset=utf-8>
+
+  <title>The Everywhere Bible</title>
+
+  <meta name=description content="A Bible app for slow internet connections.">
+  <meta name=viewport content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+
+  <style>
+    /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-block}progress,sub,sup{vertical-align:baseline}[type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{padding:.35em .75em .625em}legend{color:inherit;display:table;max-width:100%;white-space:normal}textarea{overflow:auto}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}[hidden],template{display:none}
+
+    html, body, .hero {height: 100%;}
+
+    html {
+      font-family: sans-serif;
+      background-color: black;
+      color: white;
+      font-size: 16px;
+    }
+
+    a, a:visited {
+      color: white;
+    }
+
+    .hero {
+      background-image: url(/img/crowd.jpg);
+      background-size: cover;
+      position: relative;
+    }
+
+    .half-hero {
+      height: 35%;
+      position: relative;
+      background-color: #90ffca;
+    }
+
+    .hero span, .half-hero span {
+      background-color: black;
+    }
+
+    .cta {
+      padding: 4rem 3rem;
+      text-transform: uppercase;
+    }
+
+    .cta-text-1, .cta-text-2, .cta-text-3 {
+      line-height: 3rem;
+      /*padding: 0 0.5rem;*/
+    }
+
+    .cta-text-1, .cta-text-3 {
+      font-size: 3rem;
+    }
+
+    .cta-text-2 {
+      font-size: 5rem;
+      line-height: 5rem;
+    }
+
+    @media (max-width: 720px) {
+      .cta {
+        padding: 3rem 2rem;
+      }
+
+      .cta-text-1, .cta-text-3 {
+        font-size: 2rem;
+        line-height: 2rem;
+      }
+      .cta-text-2 {
+        font-size: 3rem;
+        line-height: 3rem;
+      }
+
+      .optional-break {
+        content: '\A';
+        white-space: pre;
+      }
+    }
+
+    .do-better {
+      position: absolute;
+      bottom: 6rem;
+      text-align: center;
+      font-size: 2rem;
+      width: 100%;
+    }
+
+    .do-better span {
+      padding: 0 0.5rem;
+    }
+
+    section {
+      padding: 3rem;
+    }
+
+    @media (max-width: 720px) {
+      section {
+        padding: 1rem;
+      }
+    }
+
+    section p, section ul, section h2 {
+      max-width: 512px;
+      margin: auto;
+    }
+
+    nav {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: black;
+      text-align: center;
+      text-transform: uppercase;
+      height: 3rem;
+      line-height: 3rem;
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      text-decoration: none;
+    }
+
+    nav a + a:before {
+      margin-left: 1rem;
+      content: '\2671';
+      margin-right: 1.2rem;
+    }
+
+    p + p, li + li, p + ul, ul + p, h2 + p {
+      margin-top: 1rem;
+    }
+
+    .neon {
+      background-color: #90ffca;
+      color: black;
+    }
+
+    .neon a {
+      color: black;
+    }
+
+    section p, section ul {
+      font-size: 1.5rem;
+      line-height: 1.8rem;
+    }
+
+    @media (max-width: 720px) {
+      font-size: 1rem;
+      line-height: 1.3rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class=hero>
+    <div class=cta>
+      <span class=cta-text>
+        <span class=cta-text-1>Today's Bible apps don't work for</span><br/>
+        <span class=cta-text-2>2 billion</span><br/>
+        <span class=cta-text-3>of the world's <span class=optional-break> </span>3 billion internet users</span>
+      </span>
+    </div>
+
+    <div class=do-better>
+      <span>We can do better.</span>
+    </div>
+
+    <nav>
+      <a href="#stats">Stats</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <section>
+    <p id=stats>
+      Today's Bible apps and websites are too big for two thirds of the people
+      on the internet. Current estimates say two billion internet users don't
+      have broadband connections, which presents a significant barrier to the
+      Word for two reasons:
+    </p>
+
+    <ul>
+      <li>
+        <a
+          href="https://www.doubleclickbygoogle.com/articles/mobile-speed-matters/">Half
+          of users lose interest after just 3 seconds</a>, <a href="https://www.webpagetest.org/result/171025_WG_a74106ddac70b565ecfed2c55bc85a76/">well before Bible
+        Gateway can load a verse</a>. That's unacceptable when it comes to
+        retail and advertising, why would it be acceptable for the Word?
+      </li>
+
+      <li>
+        Emerging markets tend to price internet by bandwidth usage (metered
+        data). That means users pay by the verse. How likely are you to get
+        lost in the Word if you have to pay to keep reading?
+      </li>
+    </ul>
+
+    <p>
+      Popular apps can download the text for offline reading, but they're
+      <em>orders of magnitude</em> larger just to download.
+    </p>
+  </section>
+
+  <section class=half-hero>
+    <div class=cta>
+      <span class=cta-text-1>
+        Let's make a Bible app for the Great Commisssion.
+      </span>
+    </div>
+  </section>
+
+  <section>
+    <p>
+      Anyone that's visited developing areas can understand the difficulty of
+      moving physical Bibles to remote areas. But even when there's no
+      electricity or running water, there's solar panels for charging mobile
+      devices. We have an opportunity to get digital copies of the Bible to
+      every tribe and tongue.
+    </p>
+
+    <p>
+      The Everywhere Bible project aims to deliver the word to slow internet
+      connections in under 3 seconds and allow people to read the Bible without
+      having to pay each time. The <a href="https://esvbible.github.io">current
+      prototype</a> is 1/100<sup>th</sup> the size of popular Bible sites,
+      works even if the connection is lost, and never makes the user download
+      the same passage twice.
+    </p>
+  </section>
+
+  <section class=neon>
+    <h2 id=contact>Want to know more?</h2>
+
+    <p>
+      <a href="mailto:aaron.r.stacy@gmail.com">Contact us</a> to find out more.
+    </p>
+  </section>
+</body>
+</html>
